@@ -6,10 +6,8 @@ read -p 'commit name: ' commit
 
 if [ -z "$commit"]
 then
-    echo "bruh moment"
     commit="autosave"
 fi
-
 git commit -am $commit
 git push origin master
 git push heroku master
