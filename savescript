@@ -4,9 +4,12 @@ cd "$(dirname "$0")"
  
 read -p 'commit name: ' commit
 
-if ["($commit)" == ""]; then
-commit="autosave"
+if ($commit)
+then
+    echo "bruh moment"
+    commit="autosave"
 fi
+echo $commit
 
 git commit -am $commit
 git push origin master
