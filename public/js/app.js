@@ -1,5 +1,3 @@
-// 97 -122
-
 function lowerPassword(password) {
     var p_list = password.split("");
     var empty_p_list = [];
@@ -38,7 +36,7 @@ function lusPassword(password) {
         for (i=32; i<126; i++){
             if (String.fromCharCode(i) == p_list[char_p]){
                 empty_p_list[char_p] = String.fromCharCode(i);
-                console.log(empty_p_list)
+                //console.log(empty_p_list)
             }
         }
     }
@@ -46,5 +44,6 @@ function lusPassword(password) {
     return guessed_password;
 }
 
-console.log(lusPassword("Zepa$Sword"))
-
+//console.time("time_elapsed")
+//console.log(lusPassword("password"))
+//console.timeEnd("time_elapsed")
